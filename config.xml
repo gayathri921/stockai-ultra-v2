@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.stockai.ultra" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>StockAI Ultra</name>
+    <description>AI-Powered Market Intelligence and Portfolio Tracking.</description>
+    <author email="gayathribanothu54@gmail.com" href="https://ais-dev-dxr4bp7ozirr5eptsriczj-248844357079.asia-southeast1.run.app">
+        StockAI Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-navigation href="*" />
+    
+    <preference name="ScrollEnabled" value="false" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="Fullscreen" value="false" />
+    
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="AndroidXEnabled" value="true" />
+    </platform>
+</widget>

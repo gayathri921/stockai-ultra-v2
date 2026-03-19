@@ -1,0 +1,7 @@
+{
+  "name": "StockAI Ultra",
+  "description": "Secure AI-powered real-time stock intelligence platform with portfolio tracking, AI analysis, and multi-language support.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

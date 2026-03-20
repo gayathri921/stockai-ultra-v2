@@ -64,10 +64,10 @@ const getApiBase = () => {
   }
   
   const envBase = (
-    typeof 'http://localhost:3000' === 'string' && 
-    'http://localhost:3000' !== 'undefined' && 
-    'http://localhost:3000'.startsWith('http') 
-      ? 'http://localhost:3000' 
+    typeof 'https://stockai-ultra-v2.onrender.com' === 'string' && 
+    'https://stockai-ultra-v2.onrender.com' !== 'undefined' && 
+    'https://stockai-ultra-v2.onrender.com'.startsWith('http') 
+      ? 'https://stockai-ultra-v2.onrender.com' 
       : ''
   ).replace(/\/$/, '');
   

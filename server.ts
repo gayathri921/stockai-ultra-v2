@@ -54,10 +54,10 @@ db.exec(`
 
 async function startServer() {
   const app = express();
-  app.use(cors());
+  app.use(cors({ origin: "https://stockai-ultra-v2.vercel.app", credentials: true, methods: ["GET", "POST", "PUT", "DELETE"] }));
   const httpServer = createServer(app);
   const io = new Server(httpServer, {
-    cors: { origin: "*" }
+    cors: { origin: "https://stockai-ultra-v2.vercel.app" }
   });
 
   const PORT = 3000;

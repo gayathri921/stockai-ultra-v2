@@ -60,7 +60,7 @@ async function startServer() {
     cors: { origin: "https://stockai-ultra-v2.vercel.app" }
   });
 
-  const PORT = 3000;
+  const PORT = process.env.PORT || 3000;
 
   app.use(express.json());
 

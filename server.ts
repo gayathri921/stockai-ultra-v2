@@ -343,7 +343,7 @@ async function startServer() {
   const fetchRealData = async () => {
     try {
       const symbolsToFetch = STOCKS.map(s => SYMBOL_MAP[s] || s);
-      const quotes = await (await (async () => { try { return await yahooFinance.quote(symbol); } catch (e) { return { regularMarketPrice: 150.0 }; } })()) as any[];
+      const quotes = await (await (async () => { try { return await yahooFinance.quote(symbol); } catch (e) { return [{ regularMarketPrice: 150.0, symbol: "DUMMY" }]; } })()) as any[];
       
       quotes.forEach(quote => {
         const originalSymbol = Object.keys(SYMBOL_MAP).find(key => SYMBOL_MAP[key] === quote.symbol) || quote.symbol;
